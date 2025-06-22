@@ -1,0 +1,674 @@
+body{
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: fadeIn 2s ease-in;
+  height: 500vh;
+  background-color: #f8f9fb;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* navbar start */
+.div1{
+  background-image: url("assets/wellcomeImage/welcome-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:120vh;
+  position: relative;
+  z-index: 1;
+}
+.div1::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    background: rgba(42, 45, 84, 0.6);
+    width: 100%;
+    height:100%;
+}
+.div1 nav{
+    display: flex;
+    z-index: 1000;
+    position: relative;
+    justify-content: space-evenly;
+    padding-top: 34px;
+
+}
+.div1 .scroll{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 29px;
+    transition: all 2s ease-in-out;
+}
+.div1 nav div{
+   display: none;
+}
+.div1 nav div button{
+    border: 2px solid blue;
+    background-color: transparent;
+    color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.div1 nav h3{
+    color: white;
+    letter-spacing: 2px;
+}
+.div1 nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-top: 7px;
+    padding-left: 10%;
+    transition: all 2s ease-in-out;
+
+}
+.div1 nav .ul{
+    padding-left: 10px;
+}
+.div1 nav ul li{
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.div1 nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+
+}
+.div1 nav ul li a:hover{
+    color: blue;
+    transition: all 1s ease-in-out;
+}
+.div1 nav ul .active{
+    color: blue;
+}
+@media (max-width: 882px){
+    .div1 nav{
+        background-color: black;
+        justify-content: space-between;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .div1 nav div{
+        display: block;
+    }
+    .div1 nav div .closebtn{
+        display: none;
+    }
+    .div1 nav h3{
+        padding-top: 10px;
+    }
+    .div1 nav ul{
+        display: none;
+        background-color: black;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    .div1 nav ul li {
+        margin: 15px 0;
+      }
+      .div1 nav div button {
+        font-size: 20px;
+      }
+    
+
+}
+/* navbar end */
+
+/* section 1 start */
+
+.Home{
+    z-index: 1;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+    animation: fadeIn 3s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.Home .sec1H1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-size: 45px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+.Home h5{
+    text-align: center;
+    transition: all 1s ease-in-out;
+
+}
+.Home button{
+    margin-top: 50px;
+    padding: 13px;
+    padding-left: 57px;
+    padding-right: 57px;
+    color: white;
+    background-color: #4e4ffa;
+    border: 0;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+}
+
+.Home button:hover{
+    background-color: blue;
+    transition: all 1s ease-in-out;
+}
+
+@media (max-width: 564px){
+    .Home .sec1H1{
+        font-size: 35px;
+    }
+    .Home h5{
+        font-size: 18px;
+    }
+}
+/* section 2 start */
+.Home2{
+    background-color: #FFFFFF;
+    color: #818998;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 0px 15px #818998;
+    /* border: 1px solid black; */
+
+}
+.Home2 .Home2div{
+    width: 100%;
+   padding-left: 40px;    
+   padding-right: 40px;    
+   padding-bottom: 40px;
+}
+.Home2 label{
+    display: block;
+    font-size: larger;
+    margin: 15px 0px;
+}
+.Home2 select{
+    padding: 20px;
+    width: 70%;
+    border: none;
+    background-color: #f8f8f8;
+    color: #888f9d;
+    border-radius: 5px;
+}
+
+.Home2 .btnHome2div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+   padding-right: 50px;
+}
+.Home2 .btnHome2div button{
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e4ffa;
+    color: white;
+    transition: all 1s ease-in-out;
+
+}
+.Home2 .btnHome2div button:hover{
+    background-color: blue;
+    transition: all 1s ease-in-out;
+}
+@media (max-width: 1171px) {
+    .div1{
+        height: 230vh;
+    }
+    .Home2{
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+     }
+     .Home2 .Home2div{
+       padding-left: 10px;    
+       padding-right: 10px;    
+       /* padding-bottom: 40px; */
+    }
+     .Home2 select{
+        width: 100%;
+     }
+     .Home2 .btnHome2div{
+        padding-left: 0px;
+       padding-right: 0px;
+    }
+
+}
+/* service section start */
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 35px;
+    margin-top: 60px;
+}
+.service .maindivservice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 25%;
+    transition: all 2s ease-in-out;
+
+}
+.service .maindivservice:hover{
+    background-color: blue;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.service h5{
+    padding-top: 20px;
+    transition: all 0.5s ease-in-out;
+
+}
+.service p{
+    padding-top: 20px;
+    transition: all 0.5s ease-in-out;
+
+}
+.service h2{
+    font-weight: bolder;
+}
+
+@media (max-width: 994px) {
+    .service{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+    
+    }
+    .service .maindivservice{
+       width: 80%;
+       margin-top: 60px;
+    }
+
+}
+/* service section end */
+
+/* new car section start */
+
+.newCar{
+    background-color: #f5f2f2;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.newCar .newCardiv1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 90px;
+}
+
+.newCar .newCardiv1 .sech2{
+    color: #4e4ffa;
+}
+
+.newCar .newCardiv2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 170px 170px 170px;
+}
+
+.newCar .newCardiv2 div{
+    padding: 25px;
+    padding-right: 43px;
+}
+
+.newCar .newCardiv2 .newCardiv2div2{
+    padding: 0px;
+}
+
+.newCar .newCardiv2 .newCardiv2div2 h2{
+    margin-bottom: 30px;
+}
+
+.newCar .newCardiv2 .newCardiv2div2 h2 a{
+   color: black;
+   text-transform: capitalize;
+   text-decoration: none;
+}
+
+.newCar .newCardiv2 .newCardiv2div2 p{
+    color: rgb(154, 150, 150);
+}
+
+.newCar .newCardiv2 .newCardiv2div2 button{
+    padding: 13px 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4e4ffa;
+}
+
+@media (max-width: 1245px){
+    .newCar .newCardiv2{
+        display: block;
+        margin: 0px;
+    }
+    .newCar .newCardiv2 div{
+        padding: 15px;
+        text-align: center;
+    }
+    .newCar .newCardiv2 img{
+        width: 100%;
+        height: auto;
+    }
+    .newCar .newCardiv2 .newCardiv2div2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .newCar{
+        padding: 20px;
+    }
+    .newCar .newCardiv2{
+        margin: 20px 0;
+    }
+    .newCar .newCardiv1 h1{
+        font-size: 24px;
+    }
+    .newCar .newCardiv1 h6{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+    .newCar .newCardiv1{
+        margin-top: 50px;
+    }
+    .newCar .newCardiv2{
+        margin: 10px 0;
+    }
+    .newCar .newCardiv2 div{
+        padding: 10px;
+    }
+    .newCar .newCardiv2 .newCardiv2div2 h2{
+        font-size: 18px;
+    }
+    .newCar .newCardiv2 .newCardiv2div2 p{
+        font-size: 14px;
+    }
+    .newCar .newCardiv2 .newCardiv2div2 button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+/* featured-cars section start */
+
+.featured-cars{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.featureddiv1 {
+    text-align: center;
+}
+.featureddiv1 h1{
+    color: #4e4ffa;
+}
+.featureddiv2{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.featureddiv2 .main{
+    margin: 15px;
+}
+.featureddiv2 .imgdiv{
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+}
+.featureddiv2 .modeldiv{
+    border: 1px solid lightgrey;
+    border-top: 0px;
+    padding: 10px;
+}
+
+.featureddiv2 .h6{
+    margin-top: 30px;
+}
+.featureddiv2 .para{
+    color: rgb(150, 142, 142);
+    margin-top: 15px;
+}
+
+@media (max-width: 1245px){
+    .featureddiv2{
+       display: flex;
+       flex-direction: column;
+    }
+    .featureddiv2 .main{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* client section start */
+
+.client{
+    margin-top: 100px;
+    background-color: #f5f2f2;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.client .clientdiv1  .clientdiv1h1{
+    color: #4e4ffa;
+}
+
+.client .clientdiv2{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.clientdiv2 .card1{
+    border: 1px solid rgb(181, 180, 180);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    margin: 15px;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+
+}
+
+.clientdiv2 .card1:hover{
+    background-color: rgb(74, 74, 228);
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.clientdiv2 .card1 p{
+    /* color:  rgb(130, 121, 121); */
+    font-size: large;
+    margin-top: 30px;
+}
+.clientdiv2 .card1 h5{
+    margin-top: 5px;
+    /* color: #626975; */
+}
+@media (max-width: 804px){
+    .client .clientdiv2{
+        flex-direction: column;
+    }
+}
+/* brand section start */
+/* Basic Styling */
+.brands {
+    padding: 20px;
+    margin: 100px;
+  }
+  
+  .brand-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .brand-images img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin: 15px;
+  }
+  
+  .brand-images img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .brand-images {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .brand-images img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .brand-images img {
+      max-width: 90%;
+    }
+  }
+  
+/* footer section start */
+
+.footer{
+    background-color: #2A2D54;
+    padding-top:100px ;
+    color: white;
+}
+
+.footer .footerdiv1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footerdiv1 h2{
+    font-weight: bold;
+}
+.footer .footerdiv1 h5{
+    padding-top: 10px;
+}
+.footerdiv2{
+    display: flex;
+    justify-content: space-between;
+}
+.fotdiv{
+    padding-top: 25px;
+}
+.fotdiv p a{
+    text-decoration: none;
+    color: gray;
+}
+.fotdiv p{
+    transition: all 0.5s ease-in-out;
+    }
+.fotdiv p:hover{
+   margin-left: 15px;
+   transition: all 0.5s ease-in-out;
+
+}
+.fotdivm{
+    padding-top: 63px;
+}
+.fotdivm p a{
+    text-decoration: none;
+    color: gray;
+}
+.fotdivm p{
+    transition: all 0.5s ease-in-out;
+}
+.fotdivm p:hover{
+    margin-left: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.inp span{
+  color: gray;
+  display: block;
+}
+.inp input{
+    background-color: #26294D;
+    border: 0;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 0px 15px #2c3170;
+}
+
+@media (max-width: 1200px){
+.footer .footerdiv1{
+    flex-direction: column;
+}
+}
